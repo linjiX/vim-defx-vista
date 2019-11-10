@@ -8,6 +8,10 @@
 "                                                     "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+augroup defx_vista
+    autocmd!
+augroup END
+
 function s:HasDefx() abort
     let l:bufs = map(range(1, winnr('$')), 'winbufnr(v:val)')
     let l:bufs = filter(l:bufs, 'getbufvar(v:val, "&filetype") ==# "defx"')
@@ -72,7 +76,7 @@ function defx_vista#ToggleDefxVista() abort
 
     call s:SetWindowConfig()
 
-    autocmd myDefx User VistaWinOpen ++once call s:OpenDefx()
+    autocmd defx_vista User VistaWinOpen ++once call s:OpenDefx()
     Vista
 endfunction
 
