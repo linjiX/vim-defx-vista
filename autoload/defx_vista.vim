@@ -76,7 +76,7 @@ function defx_vista#ToggleDefxVista() abort
 
     call s:SetWindowConfig()
 
-    autocmd defx_vista User VistaWinOpen ++once call s:OpenDefx()
+    autocmd defx_vista User VistaWinOpen ++once ++nested call s:OpenDefx()
     Vista
 endfunction
 
