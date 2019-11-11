@@ -1,8 +1,10 @@
 # vim-defx-vista
 
+![preview image](./preview.png)
+
 Inspired by [pseewald/nerdtree-tagbar-combined](https://github.com/pseewald/nerdtree-tagbar-combined),
 which opens nerdtree and tagbar compactly on the same side.
-This plugin is for open defx and vista compactly.
+This plugin is for open defx and vista compactly like above image.
 
 ## Dependency
 
