@@ -39,11 +39,13 @@ endfunction
 function s:ResetWindowConfig() abort
     if exists('s:vista_sidebar_position_user')
         let g:vista_sidebar_position = s:vista_sidebar_position_user
+        unlet s:vista_sidebar_position_user
     else
         unlet g:vista_sidebar_position
     endif
     if exists('s:vista_sidebar_width_user')
         let g:vista_sidebar_width = s:vista_sidebar_width_user
+        unlet s:vista_sidebar_width_user
     else
         unlet g:vista_sidebar_width
     endif
@@ -53,8 +55,6 @@ function s:ResetWindowConfig() abort
 
     call win_gotoid(s:prev_winid)
 
-    unlet s:vista_sidebar_width_user
-    unlet s:vista_sidebar_position_user
     unlet s:prev_winid
 endfunction
 
