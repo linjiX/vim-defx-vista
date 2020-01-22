@@ -8,6 +8,7 @@ This plugin is for open defx and vista compactly like above image.
 
 ## Dependency
 
+-   Above `vim 8.1.1113` or `neovim 4.3`
 -   [Shougo/defx.nvim](https://github.com/Shougo/defx.nvim)
 -   [liuchengxu/vista.vim](https://github.com/liuchengxu/vista.vim)
 
