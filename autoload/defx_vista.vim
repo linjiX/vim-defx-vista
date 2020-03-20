@@ -60,7 +60,7 @@ endfunction
 
 function defx_vista#ToggleDefxVista() abort
     let l:has_defx = s:HasDefx()
-    let l:has_vista = vista#sidebar#IsVisible()
+    let l:has_vista = vista#sidebar#IsOpen()
 
     if l:has_defx
         Defx -toggle
